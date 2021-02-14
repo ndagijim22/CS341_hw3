@@ -1,0 +1,82 @@
+/*
+    Author: Moses Karemera
+*/
+body {
+
+    background-color: rgb(39, 89, 207);
+    font-style: italic;
+    
+  }
+  
+  h1 {
+    color: red;
+    text-align: center;
+    text-underline-position: below;
+  }
+  
+  p {
+    font-size: 40px;
+    font-style: italic;
+    color: black;
+  }
+
+  div.image {
+    text-align: center;
+  }x
+
+  .plain{
+    text-align: center; 
+  }
+
+  h2 {
+    font-size: 40px;
+    font-style: italic;
+    color: black;
+  }
+
+/* drop down */
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: pink;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  overflow: scroll;
+  height: 200px;
+  text-align: center;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  background: lightblue;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color:black;
+  max-height: 75px;
+  overflow: auto
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<!--
+    CS 324
+    Author: Moses Karemera
+-->
+<html lang="en-US">
+<head>
+<title>Homework 2 ndagijim22</title>
+<link rel="stylesheet" href="stylesheets/myStyle.css"> 
+ 
+<script
+src=" https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+</script> 
+
+<!-- jQuerry code-->
+<script>
+ $(document).ready(function(){
+  // hide messages
+  $("h2").hide();
+  $("#button").click(function(){
+    // hide interaction area
+    $("p").hide();
+    $("#table").hide();
+    $("textarea").hide();
+    $("button").hide();
+    // show messages
+    $("h2").fadeIn(2000);
+  });
+});
+</script> src="javascripts/myFunction.js" </script>
+
+</head>
+<body>
+
+<!-- Main heading-->
+<h1>Cheesecake Order Form</h1>
+
+<!-- Access image via a URL  width="230" height="172.5"-->
+<div class="image">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/9/9c/Mondays_at_Il_Forno_-_Cheesecake_with_strawberry_sauce.jpg"
+    alt="Cheesecake Image"width="230" height="172.5" >
+</div>
+<!--Text under the picture-->
+<p>Quantity Topping</p>
+
+<!-- Dropdown to allow a choice of quantities-->
+<table id="table" style="width:15%">
+    <tr>
+  
+      <!-- drop down -->
+      <td class="select">
+      </td>
+      <td ALIGN="left">
+      <select id="quantity" name="toppings">
+          <option name="quantity"> 1 </option>
+          <option name="quantity"> 2 </option>
+          <!-- make this selected initailly -->
+          <option name="quantity"selected> 3 </option>
+        <option name="quantity"> 4 </option>
+        <option name="quantity"> 5 </option>
+      </select>
+      </td>
+  
+      <!-- toppings -->
+      <td class="radio">
+      </td>
+      <td ALIGN="left">
+      <!-- make this selected initailly -->
+      <input type="radio" name="dot"checked value="Plain">Plain<br>
+      <input type="radio" name="dot" value="Cherry">Cherry<br>
+      <input type="radio" name="dot" value="Chocolate">Chocolate<br>
+      </td>
+    
+    </tr>
+  </table>
+
+<!-- notes header -->
+<p>Notes:</p>
+
+<!-- Text aread to get the input order from the user-->
+<Textarea id="text" rows="4" cols="50" 
+    placeholder="Enter any special instructions here.">
+</Textarea> <br>
+
+<!--order button-->
+<button id="button" onclick="myFunction()"> Order </button> <br>
+
+<!-- messages to customer -->
+<h2 id="thank">Thank you! Your order has been placed.</h2>
+
+<!-- instruction message -->
+<h4 id="inst"></h4>
+
+<!--Heading of the list-->
+<div class="dropdown">
+    <h3>Orders for
+    <button class="dropbtn">Jan</button>
+    <div class="dropdown-content">
+      <a href="#">Jan</a>
+      <a href="#">Feb</a>
+      <a href="#">Mar</a>
+      <a href="#">Apr</a>
+      <a href="#">May</a>
+      <a href="#">Jun</a>
+      <a href="#">Jul</a>
+      <a href="#">Aug</a>
+      <a href="#">Sep</a>
+      <a href="#">Oct</a>
+      <a href="#">Nov</a>
+      <a href="#">Dec</a>
+    </div>
+  </div> </h3>
+
+<!--The list-->
+    <ul>
+        <li>11 cherry</li>
+        <li>17 chocolate</li>
+        <li>31 Milk</li>
+    </ul>
+
+</body>
+</html>
+
+<!-- add functionality to my dropdown -->
+<script> src="javascripts/dropDown.js"</script>
+
+
+
+
+
